@@ -1,0 +1,105 @@
+/* app.css - estilo oscuro moderno base */
+
+:root {
+    --color-fondo: #121212;
+    --color-texto: #e0e0e0;
+    --color-acento: #bb86fc;
+    --color-boton-fondo: #1f1f1f;
+    --color-boton-hover: #3700b3;
+    --color-input-fondo: #1f1f1f;
+    --color-input-texto: #e0e0e0;
+    --radio-borde: 6px;
+    --transicion: 0.3s ease;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--color-acento);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    background-color: var(--color-boton-fondo);
+    color: var(--color-texto);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    transition: background-color var(--transicion);
+    font-size: 1rem;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: var(--color-boton-hover);
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  textarea,
+  select {
+    background-color: var(--color-input-fondo);
+    color: var(--color-input-texto);
+    border: none;
+    padding: 0.5rem;
+    border-radius: var(--radio-borde);
+    font-size: 1rem;
+    transition: background-color var(--transicion);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: 2px solid var(--color-acento);
+    outline-offset: 2px;
+    background-color: #2a2a2a;
+  }
+  
+  a {
+    color: var(--color-acento);
+    text-decoration: none;
+    transition: color var(--transicion);
+  }
+  
+  a:hover {
+    color: #3700b3;
+    text-decoration: underline;
+  }
+  
