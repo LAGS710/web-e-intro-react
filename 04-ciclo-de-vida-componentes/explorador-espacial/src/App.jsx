@@ -1,10 +1,10 @@
 // App.jsx
 import React, { useState, useEffect, useMemo } from 'react';
 import Planeta from './Planeta';
-import './App.css';
+import './app.css';
+
 
 function App() {
-
 const [distancia, setDistancia] = useState(0);
 const [combustible, setCombustible] = useState(100);
 const [estadoNave, setEstadoNave] = useState('En órbita');
